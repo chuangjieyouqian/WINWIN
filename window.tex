@@ -28,6 +28,13 @@ git restore . % remend
 git reset --hard commitid %go back to any version
 git branch ... %create branch
 git branch -a %list branches
+git branch -M main % create and go to main
+git branch -b kwc % create and go to kwc
 git checkout ...%to some branch
 git checkout master(main) % to master
 git merge ... %merge with...
+
+git remote add chuangjieyouqian http://chuangjieyouqian:password@github.com/chuangjieyouqian/repositoryname.git
+git push -u chuangjieyouqian branchname %firsttime pushing to make clear the push origin and branch
+git remote -v % see remote network
+git remote -v add upstream networkname 
