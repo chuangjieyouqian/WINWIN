@@ -1,5 +1,28 @@
 mysql -uroot -p  %进入
+DDL:
 show databases;    
 use world;
+create database opopo [charset utf8];
+drop database kpkjo;
+select database();  %查看用什么苦
 show tables;
 exit 
+
+create table student(
+    id int,
+    name varchar(5),
+);
+注释  --_
+      # 
+      /*    */
+
+DML:
+insert into 表[l1,l2,l3] values(1,1,1),(2,2,2),(3,'6',3);
+delete from 表 where kokok;
+update 表 set 列=值 where kpkpk;
+
+DQL:
+select 列 * from 表 where jojojo；
+select 列，avg(age) from 表 where jojojo group by 列；   %sum min max count（*）
+select 列，avg(age) from 表 where jojojo group by 列 order by abe asc/desc limit n,m； 
+
