@@ -1,0 +1,191 @@
+python directiry/file.py %运行文件
+exit()  %退出解释器
+
+ctrl + d %复制当前行代码
+shift + alt + up/down %移动行
+Ctrl + f %搜索
+ctrl + / %添加解除注释
+alt + enter %自动导包
+
+#  %加单行注释
+“““     ”””   % 加多行注释, 定义多行字符串
+\ %转义字符，解除效应
+print("hjhjhjh",end='')  %输出不换行
+print（“艰苦艰苦就看见\t开机开卷考”）  %对齐
+print()  %控制换行
+time.sleep(500000) %暂停执行
+
+type（）  % 查看数据类型
+数据类型：string 字符串
+          int    整数
+          float  小数
+数据类型转换：str(), int(), float()
+
+运算符：+-*/  // %取整除
+              %  %取余
+              ** %指数
+              ~= %x = x ~ a
+
+字符串拼接：“阿”+a 
+            "  %s  %4d   %5.2f    %.3f    " %(A, B, C, D)      %占位，转值的类型
+            f"内容{变量}"   %不限数据类型，不控制精度
+
+input（“你是？”）  %交互输入
+
+
+第三章
+if 1 > 2：
+____asa
+elif 2==4:
+____hjhjhjhjh
+else:
+____asasasa
+
+while 1==2:
+____ioioioio
+flag = True
+
+for i in jkjkjkjk:
+    klklklk
+range(5) = [0 1 2 3 4]
+range(5,10) = [5 6 7 8 9]
+range(4,10,2)=[4 6 8]
+
+第五章 函数
+def function(data1,data2):
+    klklklklk
+    return 返回值
+if not None %None = False
+global num  % 函数内宣称num为全局变量
+
+第六章  数据容器
+list  [a,b]
+my_list.index(元素） %找指标
+my_list.insert(2, a )  %插入
+my_list.append(a)  %追加
+my_list.extend(A)  %追加一批元素
+del my_list[3]    % 删除元素
+my_list.pop(30)   % 删除元素，此为取出的元素
+my_list.remove(a)   %删除第一个出现的元素
+my_list.clear()   %清空
+my_list.count(a)   %统计数量
+len(my_list)    %长度
+
+tuple (a,b)  %元组
+
+new_my_str = my_str.replace("it", "op")  % 替换获取
+my_str_list = my_str.split(" ")  %按 分割
+new_my_str = my_str.strip(12)  %删前后的1和2，（）时，去空格
+
+list[2:9%#不含#% :2]  %取子序列
+
+set {a,b}  %集合 set() 为空集
+my_set.add(c)  %添加元素
+my_set.remove(c)  %删除元素
+my_set.pop()  %随机取元素
+my_set.clear()  %清空元素
+my_set1.diffrence(my_set2) %A\B  不影响AB
+my_set1.diffrence_update(my_set2) %A\B  影响A
+my_set1.union(my_set2) %A并B
+
+dictionary  {"a" : 1 , "b" : 2}  %字典 空字典{}
+my_dict["a"] %= 1
+my_dict["c"] = 4  %新增或更新元素
+my_dict.pop(key)  % 取其value,并删除
+my_dict.clear（）
+my_dict.keys()  %取全部key,用于遍历，或直接for循环
+
+list/str/tuple/set()  %类型转换
+sorted(my_list%，reverse = Ture%)  % 排序为列表,%倒序
+
+第七章  
+return 1 , 2
+def info(*args) % 位置不定长。元组
+def info(**kwargs)  % 关键字不定长， 字典
+def phi(compute)   %泛函
+function(lambda x,y : x + y )  %简单调用匿名函数
+
+第八章
+open("directory","r/w/a",encoding = "UTF-8")  %打开文件，w,a可创建
+f.read(10)  %读取字节 （）读全部  接续读
+f.readlines()  %读取行，装于列表  \n 换行  ，也为for的读取形式
+f.readline（）  %读一行
+f.close()
+with open() as f:  %自动删除
+____jfjffjjf  
+f.write("dldldldl")  %暂存区
+f.flush()   %刷新保存
+
+第九章  异常
+try:
+____opopopop
+except:
+____zizizizi
+else:
+____klklkl
+finally:
+opipjohjo
+except （NameError，。。） as e:  %捕获制定异常 ，e为异常信息  Exception  为全部异常
+
+import time  %ctrl + click to see time.py     [from time import * as t]
+__main__变量  % 不运行执行代码
+__all__变量   %针对*
+import package.time
+pip install opop 
+
+第十章
+import json
+json.dumps(  ,ensure_ascii = False)  % to json字符串 (中文) 
+lson.load()  % to python 
+
+gallery.pyecharts.org   %图表网站
+from pyecharts.charts import Line
+from pyecharts import options
+line = Line()
+line.add_xaxis(["aaa","bbb","ccc"])
+line.add_yaxis("AAA",[12,12,2123] , label_opts = LabelOpts(is_show = False))
+line.render()
+line.set_global_opts(
+    title_opts = TitleOpts(title = "56565" , pos_left = "center" , pos_bottom = "1%"),
+    legend_opts = LegendOpts(is_show = True),
+    toolbox_opts = ToolboxOPts(is_show = True),
+    visualmap_opts = VisualmapOpts(is_show = True)
+)
+ab173.com
+
+第十一章
+from pyecharts.charts import Map
+map = Map()
+data = [,,,,("上海"， 199)]
+map.add("地图"，data , "china")
+
+from pyecharts.charts import Bar
+bar.reveral_axis()
+
+mylist.sort(key = function #lambda element : element[1], reverse = True)
+
+第二阶段   
+第一章
+pass
+class sososo:   %设计类
+____name = None
+stu = sososo()
+stu.name = kokoko
+ __init__
+__str__    %类转字符串：print的调用
+    return "jjjjjjjj"
+__lt__
+    return self.age < other.age
+__le__
+    return         <=
+__e__
+__le__
+class sososo(898989):      %继承
+mylist : list[int,str,tuple] = [1,"5656",()]   #type: int
+
+from typing import Union %联合类型注解
+
+
+
+
+
