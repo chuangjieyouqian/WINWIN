@@ -191,13 +191,15 @@ conn = Connection(
 host = "localhost",
 port=3306,
 user="root",
-password="qeryuoQUIWEO2580"
+password="qeryuoQUIWEO2580",
+autocommit = Ture
 )
 print(conn.get_server_info())
 conn.close()
 cursor = conn.cursor()
 conn.select_db("test")
-cursor.execute()
-
+cursor.execute("sql 命令")
+result = cursor.fetchall()
+conn.commit()
 
 
