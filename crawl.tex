@@ -1,0 +1,21 @@
+import parsel 
+s = parsel.Selector(html)
+p = s.css('p')  %标签选择器
+p.get()     %第一个标签内容
+p.getall()  %所有
+p = s.css('.p') %类选择器
+p = s.css('#p') %id选择器
+p = s.css('p.p#p') %组合选择器
+#p>div    %取子标签
+#p div    %求所有标签
+p = s.css('p.p#p：：text') %属性选择器
+p = s.css('p.p#p：：attr(href)') %属性选择器
+a : last-of-type  %子列选择器  最后一个  |not()   nth-child()     nth-last-child()
+
+
+
+
+
+
+
+
